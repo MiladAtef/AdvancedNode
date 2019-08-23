@@ -29,7 +29,7 @@ class CustomPage {
 		await this.page.setCookie({ name: 'session', value: session });
 		await this.page.setCookie({ name: 'session.sig', value: sig });
 		await this.page.goto('http://localhost:3000/blogs'); // to refresh the page
-		await this.page.waitFor("a[href='/auth/logout']"); // to wait until the button is rendered on the screen
+		await this.page.waitFor("a[href='/auth/logout']"); // to wait until the button is rendered on the screeeeen
 	}
 
 	// an easier implementation of '$eval' function
